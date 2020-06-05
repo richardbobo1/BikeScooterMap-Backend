@@ -4,6 +4,12 @@ class FavoriteRoutesController < ApplicationController
     render json: favorites.as_json(:include => [:route])
   end
 
+  def show 
+    favorites = FavoriteRoute.where(user_id: params[:id])
+    render json: favorites.as_json(:include => [:route])
+  end 
+
+  
   def create 
     favorite = FavoriteRoute.create(fav_params)
     render json: favorite, include: [:route]
