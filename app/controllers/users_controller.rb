@@ -9,4 +9,7 @@ class UsersController < ApplicationController
     render json: user.as_json(:include => [:favorite_routes] )
   end
 
+
+
+
 end
