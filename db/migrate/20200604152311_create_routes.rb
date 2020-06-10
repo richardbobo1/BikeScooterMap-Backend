@@ -8,9 +8,9 @@ class CreateRoutes < ActiveRecord::Migration[6.0]
       t.string :short_description 
       t.string :description
       t.string :tips
-      t.string :google_map
+      t.string :google_map, default: "https://www.evelo.com/wp-content/uploads/2019/05/050119-google-hero-1024x450.jpg"
       t.string :source, default: "www.google.com"
-      t.strong :image_url, default: "https://blog.mapmyrun.com/wp-content/uploads/2018/12/11-Must-Read-Cycling-Stories-of-2018-4.jpg"
+      t.string :image_url, default: "https://blog.mapmyrun.com/wp-content/uploads/2018/12/11-Must-Read-Cycling-Stories-of-2018-4.jpg"
 
       t.timestamps
     end

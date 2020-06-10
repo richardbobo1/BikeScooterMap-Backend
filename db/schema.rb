@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_06_04_153040) do
+ActiveRecord::Schema.define(version: 2020_06_10_055025) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -26,10 +26,18 @@ ActiveRecord::Schema.define(version: 2020_06_04_153040) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "complete_routes", force: :cascade do |t|
+    t.integer "route_id"
+    t.integer "user_id"
+    t.boolean "completed", default: true
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
   create_table "favorite_routes", force: :cascade do |t|
     t.integer "user_id"
     t.integer "route_id"
-    t.boolean "completed"
+    t.boolean "favorite", default: true
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -51,8 +59,9 @@ ActiveRecord::Schema.define(version: 2020_06_04_153040) do
     t.string "short_description"
     t.string "description"
     t.string "tips"
-    t.string "google_map"
-    t.string "source"
+    t.string "google_map", default: "https://www.evelo.com/wp-content/uploads/2019/05/050119-google-hero-1024x450.jpg"
+    t.string "source", default: "www.google.com"
+    t.string "image_url", default: "https://blog.mapmyrun.com/wp-content/uploads/2018/12/11-Must-Read-Cycling-Stories-of-2018-4.jpg"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

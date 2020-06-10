@@ -12,13 +12,20 @@ class FavoriteRoutesController < ApplicationController
   
   def create 
     favorite = FavoriteRoute.create(fav_params)
-    render json: favorite, include: [:route]
+    render json: favorite.as_json(include: [:route])
   end 
+
+  def destroy
+    favorite = FavoriteRoute.find_by(id: params[:id])
+    favorite.destroy
+    render json: favorite 
+  end 
+
 
   private 
   
   def fav_params 
-    params.require(:favoriteroute).permit(:user_id,:route_id,:favorite)
+    params.require(:favorite_route).permit(:user_id,:route_id, :favorite)
   end 
 
 end

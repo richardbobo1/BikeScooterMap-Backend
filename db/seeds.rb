@@ -11,6 +11,7 @@ Route.destroy_all
 Company.destroy_all
 UserCompany.destroy_all
 FavoriteRoute.destroy_all
+CompleteRoute.destroy_all
 
 user1 = User.create(username: "richard3000", email: "richard@gmail.com" , password_digest: BCrypt::Password.create('password') , img_url: "https://culturalvistas.org/cms/assets/uploads/2015/08/profilepif.jpg")
 user2 = User.create(username: "ElliottSmelliott", email: "Ellie@gmail.com" , password_digest: BCrypt::Password.create('password') , img_url: "https://semantic-ui.com/images/avatar/large/elliot.jpg")
@@ -22,11 +23,6 @@ route2 = Route.create(name: "Trail ABC",length: 35,source: "www.google.com",shor
 route3 = Route.create(name: "Trail Carli B",length: 75,source: "www.google.com",short_description: "this is a brief descitpion about the route.",difficulty: "Difficult", surface: "Paved", description: "This is a really long dirt trail...",tips: "Don't go alone",google_map: "http://bikewashington.org/trails/xdctrails.gif.pagespeed.ic.M0HhDzxwU0.webp" )
 route4 = Route.create(name: "Trail Jenny from the Block",source: "www.google.com",length: 6,short_description: "this is a brief descitpion about the route.",difficulty: "Moderate", surface: "Paved", description: "This is a really long dirt trail...",tips: "Don't go alone",google_map: "http://bikewashington.org/trails/xdctrails.gif.pagespeed.ic.M0HhDzxwU0.webp" )
 route5 = Route.create(name: "Trail Mt. Vernon",length: 15,source: "www.google.com",short_description: "this is a brief descitpion about the route.",difficulty: "Easy", surface: "Mixed", description: "This is a really long dirt trail...",tips: "Don't go alone",google_map: "http://bikewashington.org/trails/xdctrails.gif.pagespeed.ic.M0HhDzxwU0.webp" )
-
-favorite1 = FavoriteRoute.create(user_id: user1.id, route_id: route1.id, completed: false)
-favorite2 = FavoriteRoute.create(user_id: user1.id, route_id: route2.id, completed: true)
-
-
 
 
 # Companies
@@ -310,3 +306,14 @@ route17=Route.create(name: 'Washington & Old Dominion Trail',source: 'http://bik
     surface: 'Paved',
     difficulty: 'Difficult',
     tips: 'add some tips by leaving a review')
+
+
+
+favorite1 = FavoriteRoute.create(user_id: user1.id, route_id: route1.id, favorite: true)
+favorite2 = FavoriteRoute.create(user_id: user1.id, route_id: route2.id, favorite: true)
+
+
+completed1 = CompleteRoute.create(user_id: user1.id, route_id: route1.id, completed: true )
+completed2 = CompleteRoute.create(user_id: user1.id, route_id: route5.id, completed: true )
+completed3 = CompleteRoute.create(user_id: user1.id, route_id: route7.id, completed: true )
+completed4 = CompleteRoute.create(user_id: user1.id, route_id: route9.id, completed: true )
