@@ -17,9 +17,9 @@ user2 = User.create(username: "ElliottSmelliott", email: "Ellie@gmail.com" , pas
 user3 = User.create(username: "JennyLovesCats", email: "JennyJo@gmail.com" , password_digest: BCrypt::Password.create('password') , img_url: "https://semantic-ui.com/images/avatar/large/jenny.jpg")
 
 
-route1 = Route.create(name: "Trail XYZ",length: 10,source: "www.google.com", short_description: "this is a brief descitpion about the route.", difficulty: "Hard", surface: "Dirt", description: "This is a really long dirt trail...",tips: "Don't go alone",google_map: "http://bikewashington.org/trails/xdctrails.gif.pagespeed.ic.M0HhDzxwU0.webp" )
+route1 = Route.create(name: "Trail XYZ",length: 10,source: "www.google.com", short_description: "this is a brief descitpion about the route.", difficulty: "Difficult", surface: "Gravel", description: "This is a really long dirt trail...",tips: "Don't go alone",google_map: "http://bikewashington.org/trails/xdctrails.gif.pagespeed.ic.M0HhDzxwU0.webp" )
 route2 = Route.create(name: "Trail ABC",length: 35,source: "www.google.com",short_description: "this is a brief descitpion about the route.",difficulty: "Easy", surface: "Paved", description: "This is a really long dirt trail...",tips: "Don't go alone",google_map: "http://bikewashington.org/trails/xdctrails.gif.pagespeed.ic.M0HhDzxwU0.webp" )
-route3 = Route.create(name: "Trail Carli B",length: 75,source: "www.google.com",short_description: "this is a brief descitpion about the route.",difficulty: "Hard", surface: "Paved", description: "This is a really long dirt trail...",tips: "Don't go alone",google_map: "http://bikewashington.org/trails/xdctrails.gif.pagespeed.ic.M0HhDzxwU0.webp" )
+route3 = Route.create(name: "Trail Carli B",length: 75,source: "www.google.com",short_description: "this is a brief descitpion about the route.",difficulty: "Difficult", surface: "Paved", description: "This is a really long dirt trail...",tips: "Don't go alone",google_map: "http://bikewashington.org/trails/xdctrails.gif.pagespeed.ic.M0HhDzxwU0.webp" )
 route4 = Route.create(name: "Trail Jenny from the Block",source: "www.google.com",length: 6,short_description: "this is a brief descitpion about the route.",difficulty: "Moderate", surface: "Paved", description: "This is a really long dirt trail...",tips: "Don't go alone",google_map: "http://bikewashington.org/trails/xdctrails.gif.pagespeed.ic.M0HhDzxwU0.webp" )
 route5 = Route.create(name: "Trail Mt. Vernon",length: 15,source: "www.google.com",short_description: "this is a brief descitpion about the route.",difficulty: "Easy", surface: "Mixed", description: "This is a really long dirt trail...",tips: "Don't go alone",google_map: "http://bikewashington.org/trails/xdctrails.gif.pagespeed.ic.M0HhDzxwU0.webp" )
 
@@ -138,7 +138,7 @@ route8=Route.create(name: 'Capital Crescent Trail',source: 'http://bikewashingto
        Avenue Tunnel.",
        google_map: 'http://bikewashington.org/trails/vernon/photo2.jpg',
        length: 11,
-       surface: 'Paved /Crushed Stone',
+       surface: 'Mixed',
        difficulty: 'Easy',
        tips: 'add some tips by leaving a review')
 
@@ -162,7 +162,7 @@ route9=Route.create(name: 'Chesapeake & Ohio Towpath',
      miles is the most heavily used and is a good place to practice.", 
      google_map: 'http://bikewashington.org/trails/vernon/photo2.jpg',
      length: 184,
-     surface: 'Natural Surface', 
+     surface: 'Mixed', 
      difficulty: 'Easy', 
      tips: 'add some tips by leaving a review')
 
@@ -214,7 +214,7 @@ route11=Route.create(name: 'Mount Vernon Trail',source: 'http://bikewashington.o
     google_map: 'http://bikewashington.org/trails/vernon/photo2.jpg',
     length: 18,
     surface: 'Paved',
-    difficulty: 'Easy',
+    difficulty: 'Moderate',
     tips: 'add some tips by leaving a review')
 
 route12=Route.create(name: 'North Bethesda Trail',source: 'http://bikewashington.org/trails/bethesda/bethesda.htm',
@@ -247,8 +247,8 @@ route13=Route.create(name: 'Northern Central Rail Trail',source: 'http://bikewas
     For further details, refer to one of the detailed map sections.",
     google_map: 'http://bikewashington.org/trails/vernon/photo2.jpg',
     length: 41,
-    surface: 'Crushed Stone ',
-    difficulty: 'Moderate',
+    surface: 'Gravel',
+    difficulty: 'Difficult',
     tips: 'add some tips by leaving a review')
 
 route14=Route.create(name: 'Rock Creek Hiker/Biker Trail',source: 'http://bikewashington.org/trails/rockcreek/md.htm',
