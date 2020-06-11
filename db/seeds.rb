@@ -19,11 +19,23 @@ user2 = User.create(username: "ElliottSmelliott", email: "Ellie@gmail.com" , pas
 user3 = User.create(username: "JennyLovesCats", email: "JennyJo@gmail.com" , password_digest: BCrypt::Password.create('password') , img_url: "https://semantic-ui.com/images/avatar/large/jenny.jpg")
 
 
-route1 = Route.create(name: "Trail XYZ",length: 10,source: "www.google.com", short_description: "this is a brief descitpion about the route.", difficulty: "Difficult", surface: "Gravel", description: "This is a really long dirt trail...",tips: "Don't go alone",google_map: "http://bikewashington.org/trails/xdctrails.gif.pagespeed.ic.M0HhDzxwU0.webp" )
-route2 = Route.create(name: "Trail ABC",length: 35,source: "www.google.com",short_description: "this is a brief descitpion about the route.",difficulty: "Easy", surface: "Paved", description: "This is a really long dirt trail...",tips: "Don't go alone",google_map: "http://bikewashington.org/trails/xdctrails.gif.pagespeed.ic.M0HhDzxwU0.webp" )
-route3 = Route.create(name: "Trail Carli B",length: 75,source: "www.google.com",short_description: "this is a brief descitpion about the route.",difficulty: "Difficult", surface: "Paved", description: "This is a really long dirt trail...",tips: "Don't go alone",google_map: "http://bikewashington.org/trails/xdctrails.gif.pagespeed.ic.M0HhDzxwU0.webp" )
-route4 = Route.create(name: "Trail Jenny from the Block",source: "www.google.com",length: 6,short_description: "this is a brief descitpion about the route.",difficulty: "Moderate", surface: "Paved", description: "This is a really long dirt trail...",tips: "Don't go alone",google_map: "http://bikewashington.org/trails/xdctrails.gif.pagespeed.ic.M0HhDzxwU0.webp" )
-route5 = Route.create(name: "Trail Mt. Vernon",length: 15,source: "www.google.com",short_description: "this is a brief descitpion about the route.",difficulty: "Easy", surface: "Mixed", description: "This is a really long dirt trail...",tips: "Don't go alone",google_map: "http://bikewashington.org/trails/xdctrails.gif.pagespeed.ic.M0HhDzxwU0.webp" )
+route1 = Route.create(name: "Trail XYZ",length: 10,source: "www.google.com", short_description: "this is a brief descitpion about the route.", 
+            difficulty: "Difficult", surface: "Gravel", description: "This is a really long dirt trail...",
+            image_url: "https://blog.mapmyrun.com/wp-content/uploads/2017/06/10-Ways-Biking-Makes-You-a-Better-Person.jpg", 
+            tips: "Don't go alone",google_map: "http://bikewashington.org/trails/xdctrails.gif.pagespeed.ic.M0HhDzxwU0.webp" )
+route2 = Route.create(name: "Trail ABC",length: 35,source: "www.google.com",short_description: "this is a brief descitpion about the route.",
+            difficulty: "Easy", surface: "Paved", description: "This is a really long dirt trail...",tips: "Don't go alone",
+            image_url:"https://static01.nyt.com/images/2019/11/19/well/physed-bike/physed-bike-articleLarge.jpg?quality=75&auto=webp&disable=upscale",
+            google_map: "https://www.colorado.com/sites/default/files/7MTNBIKING_LeisaGibson_KeystonePR.jpg" )
+route3 = Route.create(name: "Trail Carli B",length: 75,source: "www.google.com",
+            image_url: "https://res.cloudinary.com/simpleview/image/upload/v1563915967/clients/capecodma/Biking_e8a6a7d3-163d-46a1-a875-2be497658b2b.jpg",
+            short_description: "this is a brief descitpion about the route.",difficulty: "Difficult", surface: "Paved", description: "This is a really long dirt trail...",tips: "Don't go alone",google_map: "http://bikewashington.org/trails/xdctrails.gif.pagespeed.ic.M0HhDzxwU0.webp" )
+route4 = Route.create(name: "Trail Jenny from the Block",source: "www.google.com",length: 6,
+            image_url: "https://www.floridashistoriccoast.com/imager/s3_us-east-1_amazonaws_com/st-augustine-2019/images/Sports-Outdoors/COUPLE_ON_BIKES_1059925dafc489659acd47a728e6733c.jpg",
+            short_description: "this is a brief descitpion about the route.",difficulty: "Moderate", surface: "Paved", description: "This is a really long dirt trail...",tips: "Don't go alone",google_map: "http://bikewashington.org/trails/xdctrails.gif.pagespeed.ic.M0HhDzxwU0.webp" )
+route5 = Route.create(name: "Trail Mt. Vernon",length: 15,source: "www.google.com",
+            image_url: "https://www.sunset.com/wp-content/uploads/1422e4f0e374bcaad442c74d75077469-968x537-c-default.jpg", 
+            short_description: "this is a brief descitpion about the route.",difficulty: "Easy", surface: "Mixed", description: "This is a really long dirt trail...",tips: "Don't go alone",google_map: "http://bikewashington.org/trails/xdctrails.gif.pagespeed.ic.M0HhDzxwU0.webp" )
 
 
 # Companies
@@ -79,6 +91,7 @@ route6=Route.create(name: 'Baltimore, & Annapolis Trail', source: 'http://bikewa
     If all else fails, you can park at the Dixon Observation Park, which is located about 1 mile WEST of I-97 on Dorsey Road. The B&A trails is easily reach 
     from these parking areas using the BWI Trail Spur.',
     google_map: 'http://bikewashington.org/trails/vernon/photo2.jpg',
+    image_url: "https://blog.mapmyrun.com/wp-content/uploads/2017/06/10-Ways-Biking-Makes-You-a-Better-Person.jpg", 
     length: 13, 
     surface: 'Paved', 
     difficulty: 'Easy', 
@@ -104,6 +117,7 @@ route7=Route.create(name: 'BWI Trail',source: 'http://bikewashington.org/routes/
     4 miles, take the first exit for Aviation Blvd, Rt 170 (Amtrak Exit). Follow Rt 170 for about 2 miles, then make a left onto Dorsey 
     Road, Rt 176 at the light. The Dixon Observation Park is on the right, about two miles down Dorsey Road.", 
     google_map: "http://bikewashington.org/trails/vernon/photo2.jpg",
+    image_url: "https://www.sunset.com/wp-content/uploads/1422e4f0e374bcaad442c74d75077469-968x537-c-default.jpg", 
     length: 11,
     surface: 'Paved',
     difficulty: 'Easy',
@@ -134,6 +148,7 @@ route8=Route.create(name: 'Capital Crescent Trail',source: 'http://bikewashingto
        expect a good workout along this section. The highest point of the trail is in downtown Bethesda, the location of the new Wisconsin 
        Avenue Tunnel.",
        google_map: 'http://bikewashington.org/trails/vernon/photo2.jpg',
+       image_url: "https://res.cloudinary.com/simpleview/image/upload/v1563915967/clients/capecodma/Biking_e8a6a7d3-163d-46a1-a875-2be497658b2b.jpg",
        length: 11,
        surface: 'Mixed',
        difficulty: 'Easy',
@@ -158,6 +173,7 @@ route9=Route.create(name: 'Chesapeake & Ohio Towpath',
     so it is a bit rough. Therefore, you will need to build up some calluses on your butt before starting out (no joke). The first 20
      miles is the most heavily used and is a good place to practice.", 
      google_map: 'http://bikewashington.org/trails/vernon/photo2.jpg',
+     image_url:"https://static01.nyt.com/images/2019/11/19/well/physed-bike/physed-bike-articleLarge.jpg?quality=75&auto=webp&disable=upscale",
      length: 184,
      surface: 'Mixed', 
      difficulty: 'Easy', 
@@ -188,6 +204,8 @@ route10=Route.create(name: 'Cross Island Trail',source: 'http://bikewashington.o
     The road will come to a tee. Make a left here and follow the circle road around the Business park to the Terrapin Nature Area.
     As an alternative, you can also follow Route 50 across the island and exit at Kent Narrows. There is ample parking here underneath the Route 50 bridge, located right next to the trail.",
     google_map: 'http://bikewashington.org/trails/crossIsland/slide3.jpg',
+
+    image_url: "https://www.floridashistoriccoast.com/imager/s3_us-east-1_amazonaws_com/st-augustine-2019/images/Sports-Outdoors/COUPLE_ON_BIKES_1059925dafc489659acd47a728e6733c.jpg",
     length: 5,
     surface: 'Paved',
     difficulty: 'Easy',
@@ -209,6 +227,7 @@ route11=Route.create(name: 'Mount Vernon Trail',source: 'http://bikewashington.o
         good climb. Once you reach the northern end at Roosevelt Island, you can either turn around and head back south, or you can cross the footbridge over the parkway 
         and head west on the Custis Trail. This will take you to the W&OD Trail, a 45 mile long rail trail through Northern Virginia.",
     google_map: 'http://bikewashington.org/trails/vernon/photo2.jpg',
+    image_url: "https://www.sunset.com/wp-content/uploads/1422e4f0e374bcaad442c74d75077469-968x537-c-default.jpg", 
     length: 18,
     surface: 'Paved',
     difficulty: 'Moderate',
