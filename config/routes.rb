@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  # get 'journal/index'
+  # get 'journal/show'
+  # get 'journal/create'
   get 'reviews/index'
   # get 'user_companies/index'
   # get 'user_companies/show'
@@ -20,6 +23,7 @@ Rails.application.routes.draw do
   resources :complete_routes
   resources :reviews
   resources :users 
+  resources :journals 
 
   #  WILL NEED THIS FOR AUTH when i use it. 
   # namespace :api do

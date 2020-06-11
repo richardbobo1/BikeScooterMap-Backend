@@ -19,7 +19,7 @@ class CompleteRoutesController < ApplicationController
       private 
       
       def comproute_params 
-        params.require(:completedroute).permit(:user_id,:route_id)
+        params.require(:complete_route).permit(:user_id,:route_id)
       end 
 
 

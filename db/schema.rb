@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_06_10_055025) do
+ActiveRecord::Schema.define(version: 2020_06_11_045159) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -38,6 +38,18 @@ ActiveRecord::Schema.define(version: 2020_06_10_055025) do
     t.integer "user_id"
     t.integer "route_id"
     t.boolean "favorite", default: true
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "journals", force: :cascade do |t|
+    t.date "date"
+    t.integer "user_id"
+    t.integer "duration"
+    t.integer "distance"
+    t.string "difficulty"
+    t.integer "calories"
+    t.string "notes"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

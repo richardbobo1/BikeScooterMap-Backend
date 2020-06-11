@@ -12,6 +12,7 @@ Company.destroy_all
 UserCompany.destroy_all
 FavoriteRoute.destroy_all
 CompleteRoute.destroy_all
+Journal.destroy_all
 
 user1 = User.create(username: "richard3000", email: "richard@gmail.com" , password_digest: BCrypt::Password.create('password') , img_url: "https://culturalvistas.org/cms/assets/uploads/2015/08/profilepif.jpg")
 user2 = User.create(username: "ElliottSmelliott", email: "Ellie@gmail.com" , password_digest: BCrypt::Password.create('password') , img_url: "https://semantic-ui.com/images/avatar/large/elliot.jpg")
@@ -317,3 +318,10 @@ completed1 = CompleteRoute.create(user_id: user1.id, route_id: route1.id, comple
 completed2 = CompleteRoute.create(user_id: user1.id, route_id: route5.id, completed: true )
 completed3 = CompleteRoute.create(user_id: user1.id, route_id: route7.id, completed: true )
 completed4 = CompleteRoute.create(user_id: user1.id, route_id: route9.id, completed: true )
+
+journal1 = Journal.create(user_id: user1.id, date: "2020-06-01",duration: 90, distance: 22, difficulty:"Moderate", calories:450, notes:"Tough ride!" )
+journal2 = Journal.create(user_id: user1.id, date: "2020-06-02",duration: 50, distance: 15, difficulty:"Moderate", calories:350, notes:"Nice weather" )
+journal3 = Journal.create(user_id: user1.id, date: "2020-06-04",duration: 35, distance: 12, difficulty:"Easy", calories:200, notes:"legs hurt!" )
+journal4 = Journal.create(user_id: user1.id, date: "2020-06-05",duration: 125, distance: 25, difficulty:"Difficult", calories:600, notes:"Nothing interesting oday!" )
+journal5 = Journal.create(user_id: user1.id, date: "2020-06-07",duration: 25, distance: 6, difficulty:"Easy", calories:150, notes:"Ride to work!" )
+journal6 = Journal.create(user_id: user1.id, date: "2020-06-08",duration: 84, distance: 16, difficulty:"Easy", calories:250, notes:"Biked over to Georgetown." )
