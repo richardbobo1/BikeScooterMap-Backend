@@ -19,7 +19,7 @@ user2 = User.create(username: "ElliottSmelliott", email: "Ellie@gmail.com" , pas
 user3 = User.create(username: "JennyLovesCats", email: "JennyJo@gmail.com" , password_digest: BCrypt::Password.create('password') , img_url: "https://semantic-ui.com/images/avatar/large/jenny.jpg")
 
 
-route1 = Route.create(name: "Trail XYZ",length: 10,source: "www.google.com", short_description: "this is a brief descitpion about the route.", 
+route1 = Route.create(name: "Billy Goat Trail",length: 10,source: "www.google.com", short_description: "this is a brief descitpion about the route.", 
             difficulty: "Difficult", surface: "Gravel", description: "This is a really long dirt trail...",
             image_url: "https://blog.mapmyrun.com/wp-content/uploads/2017/06/10-Ways-Biking-Makes-You-a-Better-Person.jpg", 
             tips: "Don't go alone",google_map: "http://bikewashington.org/trails/xdctrails.gif.pagespeed.ic.M0HhDzxwU0.webp" )
@@ -27,10 +27,10 @@ route2 = Route.create(name: "Trail ABC",length: 35,source: "www.google.com",shor
             difficulty: "Easy", surface: "Paved", description: "This is a really long dirt trail...",tips: "Don't go alone",
             image_url:"https://static01.nyt.com/images/2019/11/19/well/physed-bike/physed-bike-articleLarge.jpg?quality=75&auto=webp&disable=upscale",
             google_map: "https://www.colorado.com/sites/default/files/7MTNBIKING_LeisaGibson_KeystonePR.jpg" )
-route3 = Route.create(name: "Trail Carli B",length: 75,source: "www.google.com",
+route3 = Route.create(name: "Trail Don't get kidnapped",length: 75,source: "www.google.com",
             image_url: "https://res.cloudinary.com/simpleview/image/upload/v1563915967/clients/capecodma/Biking_e8a6a7d3-163d-46a1-a875-2be497658b2b.jpg",
             short_description: "this is a brief descitpion about the route.",difficulty: "Difficult", surface: "Paved", description: "This is a really long dirt trail...",tips: "Don't go alone",google_map: "http://bikewashington.org/trails/xdctrails.gif.pagespeed.ic.M0HhDzxwU0.webp" )
-route4 = Route.create(name: "Trail Jenny from the Block",source: "www.google.com",length: 6,
+route4 = Route.create(name: "Kingman Island Dirt Trail",source: "www.google.com",length: 6,
             image_url: "https://www.floridashistoriccoast.com/imager/s3_us-east-1_amazonaws_com/st-augustine-2019/images/Sports-Outdoors/COUPLE_ON_BIKES_1059925dafc489659acd47a728e6733c.jpg",
             short_description: "this is a brief descitpion about the route.",difficulty: "Moderate", surface: "Paved", description: "This is a really long dirt trail...",tips: "Don't go alone",google_map: "http://bikewashington.org/trails/xdctrails.gif.pagespeed.ic.M0HhDzxwU0.webp" )
 route5 = Route.create(name: "Trail Mt. Vernon",length: 15,source: "www.google.com",
@@ -329,14 +329,17 @@ route17=Route.create(name: 'Washington & Old Dominion Trail',source: 'http://bik
 
 
 
-favorite1 = FavoriteRoute.create(user_id: user1.id, route_id: route1.id, favorite: true)
-favorite2 = FavoriteRoute.create(user_id: user1.id, route_id: route2.id, favorite: true)
+favorite1 = FavoriteRoute.create(user_id: user1.id, route_id: route12.id, favorite: true)
+favorite2 = FavoriteRoute.create(user_id: user1.id, route_id: route9.id, favorite: true)
+favorite3 = FavoriteRoute.create(user_id: user1.id, route_id: route11.id, favorite: true)
 
 
 completed1 = CompleteRoute.create(user_id: user1.id, route_id: route1.id, completed: true )
 completed2 = CompleteRoute.create(user_id: user1.id, route_id: route5.id, completed: true )
 completed3 = CompleteRoute.create(user_id: user1.id, route_id: route7.id, completed: true )
 completed4 = CompleteRoute.create(user_id: user1.id, route_id: route9.id, completed: true )
+
+
 
 journal1 = Journal.create(user_id: user1.id, date: "2020-06-01",duration: 90, distance: 22, difficulty:"Moderate", calories:450, notes:"Tough ride!" )
 journal2 = Journal.create(user_id: user1.id, date: "2020-06-02",duration: 50, distance: 15, difficulty:"Moderate", calories:350, notes:"Nice weather" )
