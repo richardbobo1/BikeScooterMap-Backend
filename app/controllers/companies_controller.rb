@@ -1,3 +1,6 @@
+require 'net/http'
+require 'json'
+
 class CompaniesController < ApplicationController
   def index
     companies = Company.all 
@@ -10,18 +13,14 @@ class CompaniesController < ApplicationController
     render json: company 
   end 
 
-  # def request_api_find_bikes(url)
 
-  #     response = Excon.get(
-  #       url,
-  #       headers: {
-  #         'X-RapidAPI-Host' => URI.parse(url).host,
-  #         'X-RapidAPI-Key' => ENV.fetch('RAPIDAPI_API_KEY')
-  #       }
-  #     )
-  #     return nil if response.status != 200
-  #     JSON.parse(response.body)
-  # end 
+  def jumpbikes
+    url =  "https://gbfs.uber.com/v1/dcb/free_bike_status.json"
+    uri = URI(url) 
+    response = Net::HTTP.get(uri)
+    JSON.parse(response)
+    render json: response 
+  end 
 
 
 

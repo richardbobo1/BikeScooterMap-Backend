@@ -15,6 +15,8 @@ Rails.application.routes.draw do
   # get 'user/index'
   # get 'user/show'
 
+  get 'companies/jumpbikes'
+  
   # resources :users 
   resources :routes 
   resources :companies 
