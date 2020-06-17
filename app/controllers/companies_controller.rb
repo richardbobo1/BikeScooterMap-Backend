@@ -15,12 +15,29 @@ class CompaniesController < ApplicationController
 
 
   def jumpbikes
-    url =  "https://gbfs.uber.com/v1/dcb/free_bike_status.json"
+    url =  "https://data.lime.bike/api/partners/v1/gbfs/washington_dc/free_bike_status.json"
     uri = URI(url) 
     response = Net::HTTP.get(uri)
     JSON.parse(response)
     render json: response 
   end 
+
+  def helbizbikes
+    url =  "https://api.helbiz.com/admin/reporting/washington/gbfs/free_bike_status.json"
+    uri = URI(url) 
+    response = Net::HTTP.get(uri)
+    JSON.parse(response)
+    render json: response 
+  end 
+
+  def capbikes
+    url =  "https://gbfs.capitalbikeshare.com/gbfs/en/station_information.json"
+    uri = URI(url) 
+    response = Net::HTTP.get(uri)
+    JSON.parse(response)
+    render json: response 
+  end 
+
 
 
 

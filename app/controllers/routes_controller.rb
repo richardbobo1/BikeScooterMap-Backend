@@ -5,12 +5,6 @@ class RoutesController < ApplicationController
 
   end
 
-  # def show
-  # end
-
-  def create
-  end
-
 
   def create
     route = Route.create(bikeroute_params)

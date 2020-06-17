@@ -15,8 +15,15 @@ Rails.application.routes.draw do
   # get 'user/index'
   # get 'user/show'
 
-  get 'companies/jumpbikes'
+  post '/login', to: 'auth#create'
+  get '/users/decode_token', to: 'users#decode_token'
+
   
+  get 'companies/jumpbikes'
+  get 'companies/helbizbikes'
+  get 'companies/capbikes'
+  
+
   # resources :users 
   resources :routes 
   resources :companies 

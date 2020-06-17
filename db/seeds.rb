@@ -13,10 +13,11 @@ UserCompany.destroy_all
 FavoriteRoute.destroy_all
 CompleteRoute.destroy_all
 Journal.destroy_all
+Review.destroy_all
 
-user1 = User.create(username: "richard3000", email: "richard@gmail.com" , password_digest: BCrypt::Password.create('password') , img_url: "https://culturalvistas.org/cms/assets/uploads/2015/08/profilepif.jpg")
-user2 = User.create(username: "ElliottSmelliott", email: "Ellie@gmail.com" , password_digest: BCrypt::Password.create('password') , img_url: "https://semantic-ui.com/images/avatar/large/elliot.jpg")
-user3 = User.create(username: "JennyLovesCats", email: "JennyJo@gmail.com" , password_digest: BCrypt::Password.create('password') , img_url: "https://semantic-ui.com/images/avatar/large/jenny.jpg")
+user1 = User.create(username: "richard", admin: true, first_name: "Richard", last_name:"Bobo", email: "richard@gmail.com" , password: 'password' , img_url: "https://culturalvistas.org/cms/assets/uploads/2015/08/profilepif.jpg")
+user2 = User.create(username: "ElliottSmelliott", first_name: "Elliott", last_name:"Smith",email: "Ellie@gmail.com" , password: 'password' , img_url: "https://semantic-ui.com/images/avatar/large/elliot.jpg")
+user3 = User.create(username: "JennyLovesCats", first_name: "Jenny", last_name:"Chung",email: "JennyJo@gmail.com" , password: 'password', img_url: "https://semantic-ui.com/images/avatar/large/jenny.jpg")
 
 
 route1 = Route.create(name: "Billy Goat Trail",length: 10,source: "www.google.com", short_description: "this is a brief descitpion about the route.", 

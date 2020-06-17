@@ -89,8 +89,12 @@ ActiveRecord::Schema.define(version: 2020_06_11_045159) do
   create_table "users", force: :cascade do |t|
     t.string "username"
     t.string "email"
+    t.string "first_name", default: "FirstName"
+    t.string "last_name", default: "LastName"
     t.string "password_digest"
-    t.string "img_url"
+    t.boolean "admin", default: false
+    t.string "img_url", default: "https://fomantic-ui.com/images/avatar2/large/elyse.png"
+    t.string "about_me", default: "This is a paragarph about me."
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
