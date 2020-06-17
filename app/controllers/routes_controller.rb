@@ -16,7 +16,7 @@ class RoutesController < ApplicationController
 
 
   def bikeroute_params
-    params.require(:route).permit(:name, :distance, :surface, :short_description, :difficulty, :tips, :google_map, :image_url)
+    params.require(:route).permit(:name, :length, :surface, :short_description, :difficulty, :tips, :google_map, :image_url)
   end
 
 

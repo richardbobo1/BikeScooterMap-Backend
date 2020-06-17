@@ -22,6 +22,7 @@ Rails.application.routes.draw do
   get 'companies/jumpbikes'
   get 'companies/helbizbikes'
   get 'companies/capbikes'
+  get 'companies/capbikestatus'
   
 
   # resources :users 

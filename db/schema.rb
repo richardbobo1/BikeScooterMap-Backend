@@ -65,6 +65,7 @@ ActiveRecord::Schema.define(version: 2020_06_11_045159) do
 
   create_table "routes", force: :cascade do |t|
     t.string "name"
+    t.integer "created_by", default: 1
     t.integer "length"
     t.string "difficulty"
     t.string "surface"
@@ -92,6 +93,7 @@ ActiveRecord::Schema.define(version: 2020_06_11_045159) do
     t.string "first_name", default: "FirstName"
     t.string "last_name", default: "LastName"
     t.string "password_digest"
+    t.string "current_city", default: "Washington, DC"
     t.boolean "admin", default: false
     t.string "img_url", default: "https://fomantic-ui.com/images/avatar2/large/elyse.png"
     t.string "about_me", default: "This is a paragarph about me."

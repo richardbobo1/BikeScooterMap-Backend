@@ -38,6 +38,14 @@ class CompaniesController < ApplicationController
     render json: response 
   end 
 
+  def capbikestatus 
+    url =  "https://gbfs.capitalbikeshare.com/gbfs/en/station_status.json"
+    uri = URI(url) 
+    response = Net::HTTP.get(uri)
+    JSON.parse(response)
+    render json: response 
+  end
+
 
 
 

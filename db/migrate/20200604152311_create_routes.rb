@@ -2,6 +2,7 @@ class CreateRoutes < ActiveRecord::Migration[6.0]
   def change
     create_table :routes do |t|
       t.string :name
+      t.integer :created_by, default: 1
       t.integer :length
       t.string :difficulty
       t.string :surface
