@@ -27,23 +27,23 @@ user3 = User.create(username: "JennyLovesCats", first_name: "Jenny", last_name:"
     img_url: "https://semantic-ui.com/images/avatar/large/jenny.jpg")
 
 
-route1 = Route.create(name: "Billy Goat Trail",length: 10,source: "www.google.com", short_description: "this is a brief descitpion about the route.", 
-            difficulty: "Difficult", surface: "Gravel", description: "This is a really long dirt trail...",
-            image_url: "https://blog.mapmyrun.com/wp-content/uploads/2017/06/10-Ways-Biking-Makes-You-a-Better-Person.jpg", 
-            tips: "Don't go alone",google_map: "http://bikewashington.org/trails/xdctrails.gif.pagespeed.ic.M0HhDzxwU0.webp" )
-route2 = Route.create(name: "Trail ABC",length: 35,source: "www.google.com",short_description: "this is a brief descitpion about the route.",
-            difficulty: "Easy", surface: "Paved", description: "This is a really long dirt trail...",tips: "Don't go alone",
-            image_url:"https://static01.nyt.com/images/2019/11/19/well/physed-bike/physed-bike-articleLarge.jpg?quality=75&auto=webp&disable=upscale",
-            google_map: "https://www.colorado.com/sites/default/files/7MTNBIKING_LeisaGibson_KeystonePR.jpg" )
-route3 = Route.create(name: "Trail Don't get kidnapped",length: 75,source: "www.google.com",
-            image_url: "https://res.cloudinary.com/simpleview/image/upload/v1563915967/clients/capecodma/Biking_e8a6a7d3-163d-46a1-a875-2be497658b2b.jpg",
-            short_description: "this is a brief descitpion about the route.",difficulty: "Difficult", surface: "Paved", description: "This is a really long dirt trail...",tips: "Don't go alone",google_map: "http://bikewashington.org/trails/xdctrails.gif.pagespeed.ic.M0HhDzxwU0.webp" )
-route4 = Route.create(name: "Kingman Island Dirt Trail",source: "www.google.com",length: 6,
-            image_url: "https://www.floridashistoriccoast.com/imager/s3_us-east-1_amazonaws_com/st-augustine-2019/images/Sports-Outdoors/COUPLE_ON_BIKES_1059925dafc489659acd47a728e6733c.jpg",
-            short_description: "this is a brief descitpion about the route.",difficulty: "Moderate", surface: "Paved", description: "This is a really long dirt trail...",tips: "Don't go alone",google_map: "http://bikewashington.org/trails/xdctrails.gif.pagespeed.ic.M0HhDzxwU0.webp" )
-route5 = Route.create(name: "Trail Mt. Vernon",length: 15,source: "www.google.com",
-            image_url: "https://www.sunset.com/wp-content/uploads/1422e4f0e374bcaad442c74d75077469-968x537-c-default.jpg", 
-            short_description: "this is a brief descitpion about the route.",difficulty: "Easy", surface: "Mixed", description: "This is a really long dirt trail...",tips: "Don't go alone",google_map: "http://bikewashington.org/trails/xdctrails.gif.pagespeed.ic.M0HhDzxwU0.webp" )
+# route1 = Route.create(name: "Billy Goat Trail",length: 10,source: "www.google.com", short_description: "this is a brief descitpion about the route.", 
+#             difficulty: "Difficult", surface: "Gravel", description: "This is a really long dirt trail...",
+#             image_url: "https://blog.mapmyrun.com/wp-content/uploads/2017/06/10-Ways-Biking-Makes-You-a-Better-Person.jpg", 
+#             tips: "Don't go alone",google_map: "http://bikewashington.org/trails/xdctrails.gif.pagespeed.ic.M0HhDzxwU0.webp" )
+# route2 = Route.create(name: "Trail ABC",length: 35,source: "www.google.com",short_description: "this is a brief descitpion about the route.",
+#             difficulty: "Easy", surface: "Paved", description: "This is a really long dirt trail...",tips: "Don't go alone",
+#             image_url:"https://static01.nyt.com/images/2019/11/19/well/physed-bike/physed-bike-articleLarge.jpg?quality=75&auto=webp&disable=upscale",
+#             google_map: "https://www.colorado.com/sites/default/files/7MTNBIKING_LeisaGibson_KeystonePR.jpg" )
+# route3 = Route.create(name: "Trail Don't get kidnapped",length: 75,source: "www.google.com",
+#             image_url: "https://res.cloudinary.com/simpleview/image/upload/v1563915967/clients/capecodma/Biking_e8a6a7d3-163d-46a1-a875-2be497658b2b.jpg",
+#             short_description: "this is a brief descitpion about the route.",difficulty: "Difficult", surface: "Paved", description: "This is a really long dirt trail...",tips: "Don't go alone",google_map: "http://bikewashington.org/trails/xdctrails.gif.pagespeed.ic.M0HhDzxwU0.webp" )
+# route4 = Route.create(name: "Kingman Island Dirt Trail",source: "www.google.com",length: 6,
+#             image_url: "https://www.floridashistoriccoast.com/imager/s3_us-east-1_amazonaws_com/st-augustine-2019/images/Sports-Outdoors/COUPLE_ON_BIKES_1059925dafc489659acd47a728e6733c.jpg",
+#             short_description: "this is a brief descitpion about the route.",difficulty: "Moderate", surface: "Paved", description: "This is a really long dirt trail...",tips: "Don't go alone",google_map: "http://bikewashington.org/trails/xdctrails.gif.pagespeed.ic.M0HhDzxwU0.webp" )
+# route5 = Route.create(name: "Trail Mt. Vernon",length: 15,source: "www.google.com",
+#             image_url: "https://www.sunset.com/wp-content/uploads/1422e4f0e374bcaad442c74d75077469-968x537-c-default.jpg", 
+#             short_description: "this is a brief descitpion about the route.",difficulty: "Easy", surface: "Mixed", description: "This is a really long dirt trail...",tips: "Don't go alone",google_map: "http://bikewashington.org/trails/xdctrails.gif.pagespeed.ic.M0HhDzxwU0.webp" )
 
 
 # Companies
@@ -74,12 +74,7 @@ company3 = Company.create(
     fetch_url: "https://api.helbiz.com/admin/reporting/washington/gbfs/free_bike_status.json"
     )
 
-review1 = Review.create(user_id: user1.id, route_id: route1.id, rating: 4, comments: "My favorie roue in dc!")
-review2 = Review.create(user_id: user2.id, route_id: route1.id, rating: 2, comments: "A harder route than it looks! bring extra water!")
 
-favComp1 = UserCompany.create(user_id: user1.id, company_id: company1.id, favorite: true )
-favComp2 = UserCompany.create(user_id: user1.id, company_id: company2.id, favorite: true )
-favComp3 = UserCompany.create(user_id: user1.id, company_id: company3.id, favorite: false )
 
 
 route6=Route.create(name: 'Baltimore, & Annapolis Trail', source: 'http://bikewashington.org/trails/ba/ba.htm',
@@ -190,7 +185,7 @@ route9=Route.create(name: 'Chesapeake & Ohio Towpath',
 
      
 
-route10=Route.create(name: 'Cross Island Trail',source: 'http://bikewashington.org/trails/crossIsland/index.htm',
+route5=Route.create(name: 'Cross Island Trail',source: 'http://bikewashington.org/trails/crossIsland/index.htm',
     short_description: "New trail running across Kent Island. Nice stop for when heading to the beach. Recommended ride for beginners.",
     description: "In September 2001, Queen Anne's County opened this nice little trail running 
     across Kent Island. The Cross Island Trail starts in the Terrapin Nature Area (located directly across the bay from Sandy Point Beach) and runs all the way to Kent Narrows. 
@@ -219,7 +214,7 @@ route10=Route.create(name: 'Cross Island Trail',source: 'http://bikewashington.o
     difficulty: 'Easy',
     tips: 'add some tips by leaving a review')
 
-route11=Route.create(name: 'Mount Vernon Trail',source: 'http://bikewashington.org/trails/vernon/vernon.htm',
+route4=Route.create(name: 'Mount Vernon Trail',source: 'http://bikewashington.org/trails/vernon/vernon.htm',
     short_description: "Very scenic trail that runs along the Potomac River to George Washington's estate at Mount Vernon. Recommended ride for visitors.",
     description: "Located just across the river from Downtown Washington D.C. is a great multi-use recreation trail. Nearly 18 miles long, the Mount 
         Vernon Trail follows the Potomac's Virginia shoreline from Theodore Roosevelt Island (near Rossyln, Va) to George Washington's Estate located at Mount Vernon.
@@ -241,7 +236,7 @@ route11=Route.create(name: 'Mount Vernon Trail',source: 'http://bikewashington.o
     difficulty: 'Moderate',
     tips: 'add some tips by leaving a review')
 
-route12=Route.create(name: 'North Bethesda Trail',source: 'http://bikewashington.org/trails/bethesda/bethesda.htm',
+route3=Route.create(name: 'North Bethesda Trail',source: 'http://bikewashington.org/trails/bethesda/bethesda.htm',
     short_description: "This trail provides an excellent commuter connection between Rockville and Bethesda.",
     description: "The North Bethesda Trail is a new project currently under construction between Bethesda and Rockville, Maryland. Previously known as the 
     Bethesda Trolley Trail, this project will upgrade and connect several existing trails into a very nice 4 mile long commuter route and greatly improve access 
@@ -288,7 +283,7 @@ route14=Route.create(name: 'Rock Creek Hiker/Biker Trail',source: 'http://bikewa
     difficulty: 'Moderate',
     tips: 'add some tips by leaving a review')
 
-route15=Route.create(name: 'Sligo Creek and Branch Trails',source: 'http://bikewashington.org/trails/branches/index.htm',
+route2=Route.create(name: 'Sligo Creek and Branch Trails',source: 'http://bikewashington.org/trails/branches/index.htm',
     short_description: "Maryland's Anacostia Tributary Trails start near Mt Rainier, and provides connections to Wheaton, College Park, and Greenbelt",
     description: "Located just outside DC's northeast border, this group of paved trails wind along the small stream valleys which feed the Anacostia River.  Although the trails are a bit too narrow and windy for effective commuting, they do provide some nice recreational rides.
     Major points of interest include: University of Maryland, Wheaton Regional Park
@@ -320,7 +315,7 @@ route16=Route.create(name: 'The Custis Trail',source: 'http://bikewashington.org
     difficulty: 'Difficult',
     tips: 'add some tips by leaving a review')
 
-route17=Route.create(name: 'Washington & Old Dominion Trail',source: 'http://bikewashington.org/trails/wad/wad.htm',
+route1=Route.create(name: 'Washington & Old Dominion Trail',source: 'http://bikewashington.org/trails/wad/wad.htm',
     short_description: "The W&OD (pronounced 'wad') is probably the best all around trail in the area. This is a rail trail between Shirlington and Purcellville, VA.",
     description: "The Washington & Old Dominion Trail (W&OD or ""Wad"") is a great rail trail through the Northern Virginia counties. The entire 45 miles is paved with nine foot 
     wide asphalt and has a painted yellow center line. There is also a parallel horse trail along much of the trail (which can be a nice diversion for ATBs). The only real complaints 
@@ -337,9 +332,17 @@ route17=Route.create(name: 'Washington & Old Dominion Trail',source: 'http://bik
 
 
 
-favorite1 = FavoriteRoute.create(user_id: user1.id, route_id: route12.id, favorite: true)
+review1 = Review.create(user_id: user1.id, route_id: route1.id, rating: 4, comments: "My favorie roue in dc!")
+review2 = Review.create(user_id: user2.id, route_id: route1.id, rating: 2, comments: "A harder route than it looks! bring extra water!")
+
+favComp1 = UserCompany.create(user_id: user1.id, company_id: company1.id, favorite: true )
+favComp2 = UserCompany.create(user_id: user1.id, company_id: company2.id, favorite: true )
+favComp3 = UserCompany.create(user_id: user1.id, company_id: company3.id, favorite: false )
+
+
+favorite1 = FavoriteRoute.create(user_id: user1.id, route_id: route3.id, favorite: true)
 favorite2 = FavoriteRoute.create(user_id: user1.id, route_id: route9.id, favorite: true)
-favorite3 = FavoriteRoute.create(user_id: user1.id, route_id: route11.id, favorite: true)
+favorite3 = FavoriteRoute.create(user_id: user1.id, route_id: route4.id, favorite: true)
 
 
 completed1 = CompleteRoute.create(user_id: user1.id, route_id: route1.id, completed: true )

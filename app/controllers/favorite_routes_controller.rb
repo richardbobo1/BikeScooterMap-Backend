@@ -12,7 +12,7 @@ class FavoriteRoutesController < ApplicationController
   
   def create 
     favorite = FavoriteRoute.create(fav_params)
-    render json: favorite.as_json(include: [:route])
+    render json: favorite.as_json(:include => [:route])
   end 
 
   def destroy

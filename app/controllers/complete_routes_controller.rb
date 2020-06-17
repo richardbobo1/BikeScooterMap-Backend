@@ -13,13 +13,21 @@ class CompleteRoutesController < ApplicationController
       
       def create 
         completedroute = CompleteRoute.create(comproute_params)
-        render json: favorite, include: [:route]
+        render json: completedroute.as_json(:include => [:route])
       end 
+
+      def destroy
+        completedroute = CompleteRoute.find_by(id: params[:id])
+        completedroute.destroy
+        render json: completedroute
+      end 
+
+
     
       private 
       
       def comproute_params 
-        params.require(:complete_route).permit(:user_id,:route_id)
+        params.require(:complete_route).permit(:user_id,:route_id,:completed)
       end 
 
 
