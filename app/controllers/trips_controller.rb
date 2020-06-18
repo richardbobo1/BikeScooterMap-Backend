@@ -3,7 +3,7 @@ class TripsController < ApplicationController
   
   def index
     trips = Trip.all 
-    render json: trips
+    render json: trips.as_json(:include => [:journals])
 
   end
 
