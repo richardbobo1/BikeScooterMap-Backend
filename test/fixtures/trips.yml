@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 1
+  trip_name: MyString
+  trip_start: 2020-06-18
+  trip_end: 2020-06-18
+  notes: MyString
+
+two:
+  user_id: 1
+  trip_name: MyString
+  trip_start: 2020-06-18
+  trip_end: 2020-06-18
+  notes: MyString

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_06_11_045159) do
+ActiveRecord::Schema.define(version: 2020_06_18_123635) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -45,11 +45,15 @@ ActiveRecord::Schema.define(version: 2020_06_11_045159) do
   create_table "journals", force: :cascade do |t|
     t.date "date"
     t.integer "user_id"
+    t.integer "trip_id"
     t.integer "duration"
     t.integer "distance"
     t.string "difficulty"
     t.integer "calories"
-    t.string "notes"
+    t.string "notes", default: ""
+    t.integer "dollarssaved", default: 0
+    t.boolean "replacedcommute", default: false
+    t.string "transportmode", default: ""
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -75,6 +79,16 @@ ActiveRecord::Schema.define(version: 2020_06_11_045159) do
     t.string "google_map", default: "https://www.evelo.com/wp-content/uploads/2019/05/050119-google-hero-1024x450.jpg"
     t.string "source", default: "www.google.com"
     t.string "image_url", default: "https://blog.mapmyrun.com/wp-content/uploads/2018/12/11-Must-Read-Cycling-Stories-of-2018-4.jpg"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "trips", force: :cascade do |t|
+    t.integer "user_id"
+    t.string "trip_name"
+    t.date "trip_start"
+    t.date "trip_end"
+    t.string "notes"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

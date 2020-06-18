@@ -5,10 +5,29 @@ class RoutesController < ApplicationController
 
   end
 
+  def show
+    route = Route.where(id: params[:id])
+    render json: route.as_json(:include => [:reviews])
+  end
 
   def create
     route = Route.create(bikeroute_params)
     render json: route
+  end 
+
+
+
+  def update
+    route = Route.find(params[:id])
+    route.update(bikeroute_params)
+    render json: route
+  end 
+
+
+  def destroy
+    route = Route.find_by(id: params[:id])
+    route.destroy
+    render json: route 
   end 
 
 

@@ -8,7 +8,7 @@ class UsersController < ApplicationController
 
   def show
     user = User.find(params[:id])
-    render json: user.as_json(:include => [:favorite_routes, :complete_routes] )
+    render json: user.as_json(:include => [:favorite_routes, :complete_routes, :journals, :trips] )
   end
 
 

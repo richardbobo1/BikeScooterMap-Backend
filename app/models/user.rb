@@ -8,6 +8,7 @@ class User < ApplicationRecord
     has_many :reviews 
     has_many :journals 
     has_many :routes, :foreign_key => "created_by"
+    has_many :trips 
 
 
 end

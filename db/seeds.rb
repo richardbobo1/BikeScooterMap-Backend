@@ -14,6 +14,7 @@ FavoriteRoute.destroy_all
 CompleteRoute.destroy_all
 Journal.destroy_all
 Review.destroy_all
+Trip.destroy_all
 
 user1 = User.create(username: "richard", admin: true, first_name: "Richard", last_name:"Bobo", 
         email: "richard@gmail.com" , password: 'password' , 
@@ -358,3 +359,8 @@ journal3 = Journal.create(user_id: user1.id, date: "2020-06-04",duration: 35, di
 journal4 = Journal.create(user_id: user1.id, date: "2020-06-05",duration: 125, distance: 25, difficulty:"Difficult", calories:600, notes:"Nothing interesting oday!" )
 journal5 = Journal.create(user_id: user1.id, date: "2020-06-07",duration: 25, distance: 6, difficulty:"Easy", calories:150, notes:"Ride to work!" )
 journal6 = Journal.create(user_id: user1.id, date: "2020-06-08",duration: 84, distance: 16, difficulty:"Easy", calories:250, notes:"Biked over to Georgetown." )
+
+
+trip1 = Trip.create(user_id: user1.id,trip_name: "DC to Pittsburgh",trip_start: "2020-06-02",trip_end: "2020-06-05",notes: "My first trip!")
+trip2 = Trip.create(user_id: user1.id,trip_name: "KS to NE",trip_start: "2020-04-02",trip_end: "2020-04-08",notes: "A group trip through the mid west.")
+trip3 = Trip.create(user_id: user1.id,trip_name: "DC to Richmond",trip_start: "2020-04-02",trip_end: "2020-04-08",notes: "A group trip through the mid west.")

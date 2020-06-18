@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  # get 'trips/index'
+  # get 'trips/show'
   # get 'journal/index'
   # get 'journal/show'
   # get 'journal/create'
@@ -34,6 +36,7 @@ Rails.application.routes.draw do
   resources :reviews
   resources :users 
   resources :journals 
+  resources :trips 
 
   #  WILL NEED THIS FOR AUTH when i use it. 
   # namespace :api do

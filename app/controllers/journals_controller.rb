@@ -15,10 +15,19 @@ class JournalsController < ApplicationController
   end
 
 
+
+  def destroy
+    journal = Journal.find_by(id: params[:id])
+    journal.destroy
+    render json: journal 
+  end 
+
+
+
   private 
   
   def journal_params 
-    params.require(:journal).permit(:user_id, :date, :duration, :distance, :difficulty, :calories, :notes)
+    params.require(:journal).permit(:user_id, :date, :duration, :distance, :difficulty, :calories, :notes, :dollarssaved, :replacedcommute, :transportmode, :trip_id)
   end 
 end
 
