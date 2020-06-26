@@ -46,6 +46,14 @@ class CompaniesController < ApplicationController
     render json: response 
   end
 
+  def skipscooters
+    url =  "https://us-central1-waybots-production.cloudfunctions.net/ddotApi-dcFreeBikeStatus"
+    uri = URI(url) 
+    response = Net::HTTP.get(uri)
+    JSON.parse(response)
+    render json: response 
+  end 
+
 
 
 

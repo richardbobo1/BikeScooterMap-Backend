@@ -1,19 +1,7 @@
 Rails.application.routes.draw do
-  # get 'trips/index'
-  # get 'trips/show'
-  # get 'journal/index'
-  # get 'journal/show'
-  # get 'journal/create'
-  get 'reviews/index'
-  # get 'user_companies/index'
-  # get 'user_companies/show'
-  # get 'user_companies/create'
-  # get 'user_companies/update'
+
   # get 'company/index'
-  # get 'favorite_route/index'
-  # get 'route/index'
-  # get 'route/show'
-  # get 'route/create'
+
   # get 'user/index'
   # get 'user/show'
 
@@ -25,6 +13,7 @@ Rails.application.routes.draw do
   get 'companies/helbizbikes'
   get 'companies/capbikes'
   get 'companies/capbikestatus'
+  get 'companies/skipscooters'
   
 
   # resources :users 
