@@ -55,6 +55,44 @@ class CompaniesController < ApplicationController
   end 
 
 
+#     new routes
+#########
+
+  def spinscooters
+    url =  "https://web.spin.pm/api/gbfs/v1/washington_dc/free_bike_status"
+    uri = URI(url) 
+    response = Net::HTTP.get(uri)
+    JSON.parse(response)
+    render json: response 
+  end 
+
+  def razorscooters
+    url =  "https://razorapi.net/api/v1/gbfs/Washington%20DC/free_bike_status.json"
+    uri = URI(url) 
+    response = Net::HTTP.get(uri)
+    JSON.parse(response)
+    render json: response 
+  end 
+
+
+  def lyftscooters
+    url =  "https://s3.amazonaws.com/lyft-lastmile-production-iad/lbs/dca/free_bike_status.json"
+    uri = URI(url) 
+    response = Net::HTTP.get(uri)
+    JSON.parse(response)
+    render json: response 
+  end 
+
+
+  def birdscooters
+    url =  "https://gbfs.bird.co/dc"
+    uri = URI(url) 
+    response = Net::HTTP.get(uri)
+    JSON.parse(response)
+    render json: response 
+  end 
+
+
 
 
 end

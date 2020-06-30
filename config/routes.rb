@@ -14,7 +14,11 @@ Rails.application.routes.draw do
   get 'companies/capbikes'
   get 'companies/capbikestatus'
   get 'companies/skipscooters'
-  
+
+  get 'companies/spinscooters'
+  get 'companies/lyftscooters'
+  get 'companies/razorscooters'
+  get 'companies/birdscooters'
 
   # resources :users 
   resources :routes 
