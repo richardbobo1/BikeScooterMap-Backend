@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   get '/users/decode_token', to: 'users#decode_token'
 
   
-  get 'companies/jumpbikes'
+  get 'companies/limescooters'
   get 'companies/helbizbikes'
   get 'companies/capbikes'
   get 'companies/capbikestatus'
@@ -23,13 +23,7 @@ Rails.application.routes.draw do
   # resources :users 
   resources :routes 
   resources :companies 
-  resources :user_companies 
-  resources :favorite_routes
-  resources :complete_routes
-  resources :reviews
   resources :users 
-  resources :journals 
-  resources :trips 
 
   #  WILL NEED THIS FOR AUTH when i use it. 
   # namespace :api do

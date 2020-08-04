@@ -14,7 +14,7 @@ class CompaniesController < ApplicationController
   end 
 
 
-  def jumpbikes
+  def limescooters
     url =  "https://data.lime.bike/api/partners/v1/gbfs/washington_dc/free_bike_status.json"
     uri = URI(url) 
     response = Net::HTTP.get(uri)
@@ -55,8 +55,7 @@ class CompaniesController < ApplicationController
   end 
 
 
-#     new routes
-#########
+
 
   def spinscooters
     url =  "https://web.spin.pm/api/gbfs/v1/washington_dc/free_bike_status"
