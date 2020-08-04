@@ -1,4 +1,6 @@
 
+# DC BikeScooter Map
+
 ![DC BikeScooter Map](/src/assets/preview-screenshot.png)
 
 *DC BikeScooter Map is an application built using Ruby on Rails for the backend and JavaScript for the frontend.*
@@ -38,9 +40,9 @@ This application should be used along with the frontend repo which can be found 
 
 * Capital Bikeshare
 
-* Lime Scooters
+* Lime, SKIP, SPIN, Razor, Lyft, Bird, JUMP
 
-* JUMP Bikes & Scooters
+
 
 
 ## Instructions
